@@ -1,0 +1,9 @@
+<%= if assigns[:profile] do %>
+  Welcome <%= @profile["first_name"] %>
+<% else %>
+  <h1>Welcome to WorkOS Elixir!</h1>
+  <%= if assigns[:error] do %>
+    <div class="error">Error <%= @error %></div>
+  <% end %>
+  <%= link "Click Here to Login", to: Routes.page_path(@conn, :login), class: "button" %>
+<% end %>
