@@ -40,7 +40,7 @@ defmodule ElixirSSOExample.MixProject do
       {:telemetry_poller, "~> 0.4"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:workos, "~> 0.1.0"}
+      {:workos, "~> 0.1.1"}
     ]
   end
 
