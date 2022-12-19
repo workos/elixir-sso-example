@@ -16,8 +16,8 @@ config :elixir_sso_example, ElixirSSOExampleWeb.Endpoint,
   live_view: [signing_salt: "AlZf+/1q"]
 
 config :elixir_sso_example,
-  redirect_uri: "http://localhost:4000",
-  domain: "YOUR_DOMAIN"
+  redirect_uri: "http://localhost:4000/callback",
+  connection: "YOUR_CONNECTION"
 
 # Configures Elixir's Logger
 config :logger, :console,

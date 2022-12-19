@@ -33,6 +33,7 @@ defmodule ElixirSSOExample.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:poison, "~> 5.0"},
       {:phoenix, "~> 1.5.3"},
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
@@ -40,7 +41,7 @@ defmodule ElixirSSOExample.MixProject do
       {:telemetry_poller, "~> 0.4"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:workos, "~> 0.1.1"}
+      {:workos, "~> 0.1.3"}
     ]
   end
 

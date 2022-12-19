@@ -18,6 +18,8 @@ defmodule ElixirSSOExampleWeb.Router do
 
     get "/", PageController, :index
     get "/login", PageController, :login
+    get "/callback", PageController, :callback
+    get "/logout", PageController, :logout
   end
 
   # Other scopes may use custom stacks.

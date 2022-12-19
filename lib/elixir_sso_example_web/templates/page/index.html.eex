@@ -1,9 +1,9 @@
-<%= if assigns[:profile] do %>
-  Welcome <%= @profile["first_name"] %>
-<% else %>
-  <h1>Welcome to WorkOS Elixir!</h1>
-  <%= if assigns[:error] do %>
-    <div class="error">Error <%= @error %></div>
-  <% end %>
-  <%= link "Click Here to Login", to: Routes.page_path(@conn, :login), class: "button" %>
-<% end %>
+<body class="container_login">
+        <div class='flex_column'>
+            <div class="flex heading_div">
+                <img src="/images/workos-logo-with-text.png" alt="workos logo">
+            </div>
+            <h2>Elixir SSO Example App</h2>
+            <a class="button login_button" href="/login">Login</a>
+        </div>
+    </body>
